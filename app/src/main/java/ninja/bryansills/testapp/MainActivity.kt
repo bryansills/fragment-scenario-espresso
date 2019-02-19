@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        supportFragmentManager.fragmentFactory = TestFragmentFactory()
+        supportFragmentManager.fragmentFactory = TestFragmentFactory("buttz")
         super.onCreate(savedInstanceState)
 
         if (supportFragmentManager.findFragmentById(android.R.id.content) == null) {
